@@ -9,42 +9,48 @@
         html,
         body {
             display: inline-flex;
-            text-align: justify;
         }
 
         .left {
             float: left;
             text-align: left;
-            position: relative;
             left: 0;
+            width: 65%;
         }
 
         .right {
             float: right;
-            text-align: right;
-            position: relative;
+            text-align: left;
             right: 0;
-
+            width: 35%
         }
 
         .dts-table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
-            width: 70%;
+            text-align: justify;
         }
 
         .phone-table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
-            width: 30%;
-            float: right;
+            text-align: center;
+            font-size: 10px;
+            width: 100%;
         }
 
-        td,
-        th {
+        .dts-table td, .dts-table th {
             border: 1px solid #dddddd;
             padding: 8px;
-            text-align: justify;
+        }
+
+        .phone-table td, .dts-table th {
+            border: 1px solid #dddddd;
+            padding: 4px;
+        }
+
+        th {
+            text-align: center;
         }
 
         tr:nth-child(even) {
@@ -59,19 +65,23 @@
         <table class='dts-table'>
             <tr>
                 <th>DTS Zone</th>
-                <th>Facilities</th>
+                <th style='text-align: center;'>Facilities Supported</th>
             </tr>
             <tr>
                 <td>Zone 1</td>
-                <td>Presbyterian Downtown (Cedar and Lead), Albuquerque Ambulance (AAS), Kaseman, El Camino, MD Anderson Radiation Treatment Center (KH), Los Lunas, The Solutions Group (Pennsylvania), Rio Bravo/Isleta, 101 Mountain (Storage Facility), PAC and Home Health Users</td>
+                <td>Presbyterian Downtown (Cedar and Lead), Albuquerque Ambulance (AAS), Kaseman, El Camino, MD Anderson
+                    Radiation Treatment Center (KH), Los Lunas, The Solutions Group (Pennsylvania), Rio Bravo/Isleta,
+                    101 Mountain (Storage Facility), PAC and Home Health Users</td>
             </tr>
             <tr>
                 <td>Zone 2</td>
-                <td>Aquatics Center, Cooper Center, Northside(Pan American), Healthplex, Carmel, Montgomery, Radiology Associates of Albuquerque (RAA), San Mateo, Wyoming, and Out-of-State Remote Users</td>
+                <td>Aquatics Center, Cooper Center, Northside(Pan American), Healthplex, Carmel, Montgomery, Radiology
+                    Associates of Albuquerque (RAA), San Mateo, Wyoming, and Out-of-State Remote Users</td>
             </tr>
             <tr>
                 <td>Zone 3</td>
-                <td>Rio Rancho 528, Atrisco, Rio Rancho High Resort, Intel, Alameda, Rust Medical Center, MD Anderson Radiation Treatment Center (RMC), Rio Rancho Southern, and Paradise</td>
+                <td>Rio Rancho 528, Atrisco, Rio Rancho High Resort, Intel, Alameda, Rust Medical Center, MD Anderson
+                    Radiation Treatment Center (RMC), Rio Rancho Southern, and Paradise</td>
             </tr>
             <tr>
                 <td>PRMC / DCT</td>
@@ -79,59 +89,212 @@
             </tr>
             <tr>
                 <td>LCMC</td>
-                <td>Lincoln County Medical Center (Ruidoso), Carrizozo, Capitan, Corona, and White Mountain Medical Center</td>
+                <td>Lincoln County Medical Center (Ruidoso), Carrizozo, Capitan, Corona, and White Mountain Medical
+                    Center</td>
             </tr>
             <tr>
                 <td>SGH</td>
-                <td>Giovanni Rovelli</td>
+                <td>Socorro & Belen PMG</td>
             </tr>
             <tr>
                 <td>SFMC</td>
-                <td>Giovanni Rovelli</td>
+                <td>Santa Fe Med Ctr & St. Michael's PMG</td>
             </tr>
             <tr>
                 <td>EGH</td>
-                <td>Giovanni Rovelli</td>
+                <td>Espanola General Hospital</td>
             </tr>
         </table>
     </div>
     <div class='right'>
         <table class='phone-table'>
             <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <th>Facility Name</th>
+                <th>CA Abbreviation</th>
+                <th>Phone Prefix</th>
             </tr>
             <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td>101 Mountain</td>
+                <td>101 Mount</td>
+                <td>841, 724, 563</td>
             </tr>
             <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
+                <td>ABQ Ambulance</td>
+                <td>AAS</td>
+                <td>449</td>
             </tr>
             <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
+                <td>Atrisco PMG</td>
+                <td>AT</td>
+                <td>462</td>
             </tr>
             <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
+                <td>Belen PMG</td>
+                <td>BE</td>
+                <td>864</td>
             </tr>
             <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
+                <td>Carmel</td>
+                <td>CAR</td>
+                <td>253</td>
             </tr>
             <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
             </tr>
+            <tr>
+                <td>Carrizozo PMG</td>
+                <td>CZ</td>
+                <td>648</td>
+            </tr>
+            <tr>
+                <td>Cedar POB/PMG</td>
+                <td>CEDAR</td>
+                <td>841, 724, 563</td>
+            </tr>
+            <tr>
+                <td>Clovis (Plains Regional)</td>
+                <td>PRMC</td>
+                <td>769</td>
+            </tr>
+            <tr>
+                <td>Cooper Center</td>
+                <td>CC</td>
+                <td>923</td>
+            </tr>
+            <tr>
+                <td>Corona</td>
+                <td>COR</td>
+                <td>849</td>
+            </tr>
+            <tr>
+                <td>El Camino (KH)</td>
+                <td>EL CAMINO</td>
+                <td>559, 291</td>
+            </tr>
+            <tr>
+                <td>Espanola</td>
+                <td>PEH</td>
+                <td>753, 367</td>
+            </tr>
+            <tr>
+                <td>HealthPlex (NS)</td>
+                <td>NS</td>
+                <td>823</td>
+            </tr>
+            <tr>
+                <td>Intel</td>
+                <td>INTEL</td>
+                <td>253</td>
+            </tr>
+            <tr>
+                <td>Kaseman</td>
+                <td>KH</td>
+                <td>559, 291</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+            <tr>
+                <td>Capitan PMG</td>
+                <td>CAP</td>
+                <td>354</td>
+            </tr>
+
+
         </table>
     </div>
 </body>
