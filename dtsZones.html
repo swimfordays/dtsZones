@@ -29,21 +29,31 @@
             width: 35%
         }
 
+        .right button {
+            text-align: center;
+            float: right;
+        }
+
         .dts-table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             text-align: left;
         }
 
-        .phone-table {
+        .hide {
+            display: none;
+        }
+
+        .phone-table, .prefix-table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             text-align: left;
             font-size: 9px;
             width: 100%;
         }
+        
 
-        .phone-table th {
+        .phone-table th, .prefix-table th {
             font-size: 10px;
         }
 
@@ -52,7 +62,7 @@
             padding: 8px;
         }
 
-        .phone-table td, .dts-table th {
+        .phone-table td, .dts-table th, .prefix-table td {
             border: 1px solid #dddddd;
             padding: 4px;
         }
@@ -136,8 +146,9 @@
         </div>
     </div>
     <div class='right'>
-        <table class='phone-table'>
-            <!-- <tr>
+        <button onclick="listChange()">Toggle Contacts / Prefixes</button>
+        <table class='prefix-table hide' id='prefix-table'>
+            <tr>
                 <th>Facility Name</th>
                 <th>CA Abbreviation</th>
                 <th>Phone Prefix</th>
@@ -321,7 +332,9 @@
                 <td>Wyoming PMG</td>
                 <td>WY</td>
                 <td>462</td>
-            </tr> -->
+            </tr>
+        </table>
+        <table class='phone-table' id='phone-table'>
             <tr>
                 <th>IT / Techical Contacts</th>
                 <th>Phone #</th>
@@ -481,5 +494,15 @@
         </table>
     </div>
 </body>
-
+<script>
+    const listChange = () => {
+        if (document.getElementById('prefix-table').classList == 'prefix-table hide') {
+            document.getElementById('prefix-table').classList = 'prefix-table';
+            document.getElementById('phone-table').classList = 'phone-table hide';
+        } else {
+            document.getElementById('phone-table').classList = 'phone-table';
+            document.getElementById('prefix-table').classList = 'prefix-table hide';
+        }
+    }
+</script>
 </html>
