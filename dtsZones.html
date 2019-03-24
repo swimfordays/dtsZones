@@ -146,7 +146,7 @@
         </div>
     </div>
     <div class='right'>
-        <button onclick="listChange()">Toggle Contacts / Prefixes</button>
+        <button id='listButton' onclick="listChange()">Click for Common Prefixes</button>
         <table class='prefix-table hide' id='prefix-table'>
             <tr>
                 <th>Facility Name</th>
@@ -499,9 +499,11 @@
         if (document.getElementById('prefix-table').classList == 'prefix-table hide') {
             document.getElementById('prefix-table').classList = 'prefix-table';
             document.getElementById('phone-table').classList = 'phone-table hide';
+            document.getElementById('listButton').innerHTML = 'Click for Phone Number Directory'
         } else {
             document.getElementById('phone-table').classList = 'phone-table';
             document.getElementById('prefix-table').classList = 'prefix-table hide';
+            document.getElementById('listButton').innerHTML = 'Click for Common Prefixes'
         }
     }
 </script>
